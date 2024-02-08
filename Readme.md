@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Niko Shoo](https://up.htmlacademy.ru/htmlcss-individual/1/user/2486809).
-* Наставник: `Дмитрий Осадченко`.
+* Наставник: [Дмитрий Осадченко] (https://htmlacademy.ru/profile/dimaos).
 
 ---
 
