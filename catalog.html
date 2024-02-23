@@ -8,10 +8,10 @@
 
   <body>
     <header class="page-header">
+      <a class="sedona-logo-header" href="index.html">
+        <img class="page-header-logo" alt="Логотип городка Седона">
+      </a>
       <nav class="navigation">
-        <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" alt="Логотип городка Седона" src="#">
-        </a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
@@ -34,15 +34,13 @@
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Хочу сюда!</span>
-            </a>
-          </li>
         </ul>
+        <a class="button navigation-link" href="#">
+          Хочу сюда!
+        </a>
       </nav>
     </header>
-    <main class="main-inner">
+    <main class="hero-inner">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -54,8 +52,8 @@
           </li>
         </ul>
       </header>
-      <section class="catalog-products">
-        <h2 class="visually-hidden">Варианты гостиниц с фильтрами</h2>
+      <section class="hotels-sedona">
+        <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -106,6 +104,11 @@
           <button class="button" type="submit">Применить</button>
           <button class="button" type="reset">Сбросить</button>
         </form>
+      </section>
+      <section class="catalog">
+        <p class="number-pages"> Найдено гостиниц:
+          <output class="result">38</output>
+        </p>
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
           <option value="popular">Сначала популярные</option>
@@ -126,56 +129,54 @@
               <img class="product-card-image" src="#" alt="Amara Resort & Spa">
               <h3 class="product-card-title">Amara Resort & Spa</h3>
             </a>
-            <p class="product-card-desc">Гостиница</p>
+            <p class="product-card-type">Гостиница</p>
             <p class="product-card-price">От 4000 ₽</p>
             <a class="product-card-button button-more">подробнее</a>
             <a class="product-card-button button-favorites">в избранное</a>
-            <div class="rating">
-              <span class="visually-hidden">4 звезды</span>
-              <span class="rating-desc">Рейтинг: 8,5</span>
-            </div>
+
+            <span class="visually-hidden">4 звезды</span>
+            <p class="rating-desc">Рейтинг: 8,5</p>
+
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="#" alt="Villas at Poco Diablo">
               <h3 class="product-card-title">Villas at Poco Diablo</h3>
             </a>
-            <p class="product-card-desc">Гостиница</p>
+            <p class="product-card-type">Гостиница</p>
             <p class="product-card-price">От 5000 ₽</p>
             <a class="product-card-button button-more">подробнее</a>
             <a class="product-card-button button-favorites">в избранное</a>
-            <div class="rating">
-              <span class="visually-hidden">4 звезды</span>
-              <span class="rating-desc">Рейтинг: 9,2</span>
-            </div>
+
+            <span class="visually-hidden">4 звезды</span>
+            <p class="rating-desc">Рейтинг: 9,2</p>
+
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="#" alt="Desert Quail Inn">
               <h3 class="product-card-title">Desert Quail Inn</h3>
             </a>
-            <p class="product-card-desc">Гостиница</p>
+            <p class="product-card-type">Гостиница</p>
             <p class="product-card-price">От 2500 ₽</p>
             <a class="product-card-button button-more">подробнее</a>
             <a class="product-card-button button-favorites">в избранное</a>
-            <div class="rating">
-              <span class="visually-hidden">3 звезды</span>
-              <span class="rating-desc">Рейтинг: 6,9</span>
-            </div>
+
+            <span class="visually-hidden">3 звезды</span>
+            <p class="rating-desc">Рейтинг: 6,9</p>
+
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="#" alt="GreenTree Inn">
               <h3 class="product-card-title">GreenTree Inn</h3>
             </a>
-            <p class="product-card-desc">Гостиница</p>
+            <p class="product-card-type">Гостиница</p>
             <p class="product-card-price">От 1500 ₽</p>
             <a class="product-card-button button-more">подробнее</a>
             <a class="product-card-button button-favorites">в избранное</a>
-            <div class="rating">
-              <span class="visually-hidden">2 звезды</span>
-              <span class="rating-desc">Рейтинг: 5,0</span>
-            </div>
+            <span class="visually-hidden">2 звезды</span>
+            <p class="rating-desc">Рейтинг: 5,0</p>
           </li>
         </ul>
         <ul class="pagination">
@@ -192,22 +193,22 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
+            <span class="pagination-separator">...</span>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
-        <section class="newsletter">
-          <h2 class="newsletter-page-catalog">Подпишитесь на рассылку</h2>
-          <p class="newsletter-page-catalog-desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
-            <button class="button newsletter-button" type="submit">
-              <span class="butto-submit">ПОДПИСАТЬСЯ</span>
-            </button>
-          </form>
-        </section>
+      </section>
+      <section class="newsletter">
+        <h2 class="newsletter-page-catalog">Подпишитесь на рассылку</h2>
+        <p class="newsletter-page-catalog-desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
+          <button class="button newsletter-button" type="submit">
+            <span class="butto-submit">ПОДПИСАТЬСЯ</span>
+          </button>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
@@ -225,22 +226,18 @@
         </li>
         <li class="footer-social-item">
           <a class="button" href="#">
-            <span class="visually-hidden">Ю туб</span>
-          </a>
-        </li>
-        <li class="footer-contacts-item">
-          <p class="visually-hidden">Контакты</p>
-          <address class="footer-contacts-address">
-            <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          </address>
-        </li>
-        <li class="footer-logo-item">
-          <p class="visually-hidden">Разработчики</p>
-          <a class="footer-logo-link" href="https://htmlacademy.ru/">
-            <img class="footer-logo" src="#" alt="Логотип «HTML-Academy».">
+            <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
       </ul>
+      <address class="footer-contacts-address">
+        <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </address>
+      <div class="developer-logo-wrap">
+        <a class="developer-link" href="https://htmlacademy.ru/">
+          <img class="logo-developer" src="#" alt="Логотип «HTML-Academy».">
+        </a>
+      </div>
     </footer>
   </body>
 
