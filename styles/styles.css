@@ -1,0 +1,303 @@
+@font-face {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.18;
+  background-color: #f2f2f2;
+  color: #333333;
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*Убирает точки у списков*/
+.navigation-list,
+.advantages-list,
+.desc-housing-list,
+.catalog-filter-list,
+.product-list,
+.footer-list {
+  list-style-type: none;
+}
+
+/*Хедер*/
+.page-header {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/*Навигация хедер*/
+.navigation-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.button-to-catalog {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  width: 160px;
+  height: 36px;
+  background-color: #756157;
+}
+
+/*Блок Hero*/
+.hero-index {
+  text-align: center;
+}
+
+/*Картинка с логотипом Hero*/
+.hero-desc {
+  background-image:
+    url("../images/divider.png"),
+    url("../images/mountain-home-page.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom, center;
+  text-align: center;
+  min-height: 485px;
+  padding: 51px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Преимущества заголовок (Седона не большой городок)
+   Преимущество второе, заголовок (Приезжайте в Седону отдохнуть)*/
+.section-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+/* Преимущества описание (рассмотрим причины)
+   Преимущество второе, описание (Опытный персонал)*/
+.section-subtitle {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.8;
+  text-align: center;
+  color: #333333;
+}
+
+/*Блок преимуществ*/
+.advantages-item-extended {
+  background-color: #82b3d3;
+  color: #ffffff;
+}
+
+/* Второй варниант обьявления широким элементам списка
+.advantages-item:first-child {
+    background-color: #82b3d3;
+    color: #ffffff;
+}
+.advantages-item:last-child {
+  background-color: #82b3d3;
+  color: #ffffff;
+} */
+
+
+.advantages-item:nth-child(2n) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+/* второй вариант
+.advantages-item {
+  background-color: rgba(131, 179, 211, 0.12);
+} */
+
+.advantages-item:nth-child(3n) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+
+/*Заголовок карточек преимущества*/
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  ;
+}
+
+/*Описание карточек преимущества*/
+
+.advantages-item-extended .advantages-desc {
+  color: #f2f2f2;
+}
+
+/* Второй вариант
+.advantages-desc .advantages-desc:not(:first-child) .advantages-desc:not(:last-child) {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  color: #333333;
+} */
+
+/*Третий вариант
+.advantages-desc :not(.advantages-item-extended) {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  color: #333333;
+} */
+
+
+
+
+/* Блок: еда, сувениры, жилье */
+.desc-housing-item:nth-child(1n) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.desc-housing-item:nth-child(2) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+/* Заголовок: еда, сувениры, жилье*/
+.desc-housing-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/* Описание: еда, сувениры, жилье*/
+.desc-housing-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  color: #333333;
+}
+
+
+.button-search-hotel {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.18;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 12px 50px;
+  width: 376px;
+  height: 52px;
+  background-color: #756157;
+}
+
+.newsletter-index {
+  background-color: #483a33;
+  background-image: url("../images/Subscribe-mountain.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 96px;
+  padding-bottom: 104px;
+  color: #ffffff;
+  text-align: center;
+  min-height: 414px;
+}
+
+.newsletter-page-main {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.newsletter-page-main-desc {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.18;
+  text-align: center;
+  color: #ffffff;
+}
+
+.newsletter-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.18;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 0 4px 4px 0;
+  padding: 8px 50px;
+  width: 232px;
+  height: 52px;
+  background-color: #82b3d3;
+}
+
+.field {
+  border-radius: 4px 0 0 4px;
+  padding: 12px 20px;
+  width: 452px;
+  height: 52px;
+}
+
+
+
+
+/* Страница каталог*/
+.wrap-filter {
+  background-image: url("../images/Catalog-inner.jpg");
+  background-repeat: no-repeat;
+  background-color: #756157;
+  color: #ffffff;
+  background-size: cover;
+}
