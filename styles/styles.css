@@ -15,6 +15,11 @@
   font-display: swap;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
   font-family: "PT Sans", sans-serif;
@@ -44,11 +49,7 @@ body {
   overflow: hidden;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+
 
 /*Убирает точки у списков*/
 .navigation-list,
@@ -97,6 +98,7 @@ body {
 /*Блок Hero*/
 .hero-index {
   text-align: center;
+  background-color: #ffffff;
 }
 
 /*Картинка с логотипом Hero*/
@@ -106,38 +108,50 @@ body {
     url("../images/mountain-home-page.jpg");
   background-repeat: no-repeat;
   background-position: center bottom, center;
-  text-align: center;
   min-height: 485px;
   padding: 51px;
-  background-color: #ffffff;
   color: #000000;
 }
 
-/* Преимущества заголовок (Седона не большой городок)
-   Преимущество второе, заголовок (Приезжайте в Седону отдохнуть)*/
-.section-title {
+/* Преимущества заголовок (Седона не большой городок)*/
+.section-title-advantages {
   font-weight: 700;
   font-size: 30px;
   line-height: 1.2;
   text-transform: uppercase;
-  text-align: center;
   color: #000000;
+  margin: 0;
+  padding-top: 69px;
+  padding-bottom: 25px;
 }
 
-/* Преимущества описание (рассмотрим причины)
-   Преимущество второе, описание (Опытный персонал)*/
-.section-subtitle {
+/* Преимущества описание (рассмотрим причины)*/
+.section-subtitle-advantages {
   font-weight: 400;
   font-size: 22px;
-  line-height: 1.8;
-  text-align: center;
+  line-height: 1.18;
   color: #333333;
+  padding-bottom: 69px;
+  margin: 0
+}
+
+.advantages-list {
+  padding-left: 0;
+  margin: 0;
 }
 
 /*Блок преимуществ*/
 .advantages-item-extended {
   background-color: #82b3d3;
   color: #ffffff;
+}
+
+.advantages-title {
+  margin: 0;
+}
+
+.advantages-image {
+  display: block;
 }
 
 /* Второй варниант обьявления широким элементам списка
@@ -248,7 +262,6 @@ body {
   padding-top: 96px;
   padding-bottom: 104px;
   color: #ffffff;
-  text-align: center;
   min-height: 414px;
 }
 
@@ -265,7 +278,6 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 1.18;
-  text-align: center;
   color: #ffffff;
 }
 
