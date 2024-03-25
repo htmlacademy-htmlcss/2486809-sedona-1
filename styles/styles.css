@@ -113,6 +113,11 @@ body {
   color: #000000;
 }
 
+.wrap-desc-advantages {
+  padding-top: 69px;
+  padding-bottom: 69px;
+}
+
 /* Преимущества заголовок (Седона не большой городок)*/
 .section-title-advantages {
   font-weight: 700;
@@ -120,9 +125,8 @@ body {
   line-height: 1.2;
   text-transform: uppercase;
   color: #000000;
-  margin: 0;
-  padding-top: 69px;
-  padding-bottom: 25px;
+  margin-top: 0;
+  margin-bottom: 25px;
 }
 
 /* Преимущества описание (рассмотрим причины)*/
@@ -131,7 +135,6 @@ body {
   font-size: 22px;
   line-height: 1.18;
   color: #333333;
-  padding-bottom: 69px;
   margin: 0
 }
 
@@ -211,7 +214,32 @@ body {
 } */
 
 
+.wrap-desc-housing {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
 
+.section-title-housing {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.section-subtitle-housing {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.18;
+  margin: 0;
+}
+
+.desc-housing-list {
+  padding-left: 0;
+  margin-bottom: 0;
+}
 
 /* Блок: еда, сувениры, жилье */
 .desc-housing-item:nth-child(1n) {
@@ -240,7 +268,24 @@ body {
 }
 
 
+.hotel-offer {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.section-title-hotel {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.section-subtitle-hotel {
+  margin-top: 0;
+  margin-bottom: 54px;
+}
+
 .button-search-hotel {
+  display: block;
+  margin: auto;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.18;
