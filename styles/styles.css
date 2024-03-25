@@ -57,7 +57,9 @@ body {
 .desc-housing-list,
 .catalog-filter-list,
 .product-list,
-.footer-list {
+.footer-list,
+.card-type,
+.pagination {
   list-style-type: none;
 }
 
@@ -79,7 +81,7 @@ body {
   text-transform: capitalize;
 }
 
-.button-to-catalog {
+.button-want {
   display: block;
   font-weight: 700;
   font-size: 16px;
@@ -113,12 +115,13 @@ body {
   color: #000000;
 }
 
+/* Преимущества заголовок (Седона не большой городок)*/
+
 .wrap-desc-advantages {
   padding-top: 69px;
   padding-bottom: 69px;
 }
 
-/* Преимущества заголовок (Седона не большой городок)*/
 .section-title-advantages {
   font-weight: 700;
   font-size: 30px;
@@ -144,11 +147,6 @@ body {
 }
 
 /*Блок преимуществ*/
-.advantages-item-extended {
-  background-color: #82b3d3;
-  color: #ffffff;
-}
-
 .advantages-title {
   margin: 0;
 }
@@ -157,27 +155,16 @@ body {
   display: block;
 }
 
-/* Второй варниант обьявления широким элементам списка
-.advantages-item:first-child {
-    background-color: #82b3d3;
-    color: #ffffff;
-}
-.advantages-item:last-child {
+.advantages-item-extended {
   background-color: #82b3d3;
   color: #ffffff;
-} */
-
+}
 
 .advantages-item:nth-child(2n) {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-/* второй вариант
-.advantages-item {
-  background-color: rgba(131, 179, 211, 0.12);
-} */
-
-.advantages-item:nth-child(3n) {
+.advantages-item:not(.advantages-item-extended):nth-child(2n) {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
@@ -340,14 +327,21 @@ body {
   padding: 12px 20px;
   height: 52px;
   width: 452px;
+  border-width: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #000;
+  background-color: #f2f2f2;
 }
 
 .newsletter-button {
   display: block;
+  border-radius: 0 4px 4px 0;
   height: 52px;
   width: 232px;
   background-color: #82b3d3;
-
+  border-width: 0;
 }
 
 .name-button-submit {
@@ -359,15 +353,269 @@ body {
   color: #ffffff;
 }
 
-
-
-
+.footer-contacts-address-phone {
+  font-weight: 400;
+  font-size: 40px;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
 
 /* Страница каталог*/
+
+.hero-inner {
+  background-color: #ffffff;
+}
+
 .wrap-filter {
-  background-image: url("../images/Catalog-inner.jpg");
+  background-image: url("../images/catalog/catalog-inner.jpg");
   background-repeat: no-repeat;
   background-color: #756157;
   color: #ffffff;
   background-size: cover;
+}
+
+.button-want-catalog {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  width: 160px;
+  height: 36px;
+  background-color: #756157;
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.3;
+  color: #ffffff;
+  margin: 0;
+}
+
+
+.button-apply {
+  border-radius: 4px;
+  padding: 8px 50px;
+  width: 191px;
+  height: 36px;
+  background-color: #82b3d3;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  border-width: 0;
+
+}
+
+.button-reset {
+  border-radius: 4px;
+  padding: 8px 50px;
+  width: 191px;
+  height: 36px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  border-width: 0;
+  background-color: transparent;
+}
+
+.number-pages {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.select-control {
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  padding: 10px 20px;
+  width: 292px;
+  height: 49px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16667;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.card-type {
+  margin: 0;
+  padding-left: 0;
+  padding-top: 10px;
+}
+
+.button-cards {
+  border: 2px solid #000;
+  border-radius: 4px;
+  padding: 14px 12px;
+  width: 48px;
+  height: 48px;
+}
+
+.button-card {
+  border: 2px solid #000;
+  border-radius: 4px;
+  padding: 14px 12px;
+  width: 48px;
+  height: 48px;
+}
+
+.button-light {
+  border: 2px solid #000;
+  border-radius: 4px;
+  padding: 14px 12px;
+  width: 48px;
+  height: 48px;
+}
+
+
+.card-type-item {
+  display: inline;
+  padding-top: 10px;
+  margin-right: 5px;
+}
+
+.product-card-button {
+  border-radius: 4px;
+  padding: 8px 50px;
+  width: 140px;
+  height: 36px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+.button-more {
+  background-color: #756157;
+  color: #ffffff;
+}
+
+.button-favorites {
+  background-color: #82b3d3;
+  color: #ffffff;
+}
+
+.product-card-link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  color: #000;
+  text-decoration: none;
+}
+
+.pagination {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.pagination-item:first-child {
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  width: 60px;
+  height: 60px;
+  color: #000000;
+}
+
+.pagination-item:not(:nth-child(5)):not(:nth-child(1)) {
+  background-color: #82b3d3;
+  color: #ffffff;
+  border-radius: 4px;
+  width: 60px;
+  height: 60px;
+  text-decoration: none;
+}
+
+.pagination-item:nth-child(5) {
+  background-color: #ffffff;
+  border-radius: 4px;
+  width: 60px;
+  height: 60px;
+}
+
+
+.newsletter-catalog {
+  background-color: #ffffff;
+  padding-top: 96px;
+  padding-bottom: 104px;
+  min-height: 414px;
+  text-align: center;
+}
+
+.newsletter-page-catalog {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+}
+
+.newsletter-page-catalog-desc {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.18;
+  color: #333333;
+  margin-top: 0;
+  margin-bottom: 54px;
+
+}
+
+
+
+.field {
+  display: block;
+  border-radius: 4px 0 0 4px;
+  padding: 12px 20px;
+  height: 52px;
+  width: 452px;
+  border-width: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #000;
+  background-color: #f2f2f2;
+}
+
+.newsletter-button {
+  display: block;
+  border-radius: 0 4px 4px 0;
+  height: 52px;
+  width: 232px;
+  background-color: #82b3d3;
+  border-width: 0;
+}
+
+.name-button-submit {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
 }

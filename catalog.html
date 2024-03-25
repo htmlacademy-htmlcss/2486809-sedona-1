@@ -46,7 +46,7 @@
               </a>
             </li>
           </ul>
-          <a class="button navigation-link" href="#">
+          <a class="button button-want-catalog" href="#">
             Хочу сюда!
           </a>
         </nav>
@@ -119,8 +119,8 @@
                   </li>
                 </ul>
               </fieldset>
-              <button class="button" type="submit">Применить</button>
-              <button class="button" type="reset">Сбросить</button>
+              <button class="button-apply" type="submit">Применить</button>
+              <button class="button-reset" type="reset">Сбросить</button>
             </form>
           </section>
         </div>
@@ -133,26 +133,34 @@
             <option value="popular">Сначала популярные</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
-          <a href="#" class="button button-cards">
-            <span class="visually-hidden">Показать карточки</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none">
-              <path fill="#000"
-                d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
-            </svg>
-          </a>
-          <a class="button button-card" href="#">
-            <span class="visually-hidden">Показать карточку</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none">
-              <path fill="#000" d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
-            </svg>
-          </a>
-          <a class="button button-light" href="#">
-            <span class="visually-hidden">Показать список</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none">
-              <path fill="#000"
-                d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
-            </svg>
-          </a>
+          <ul class="card-type">
+            <li class="card-type-item">
+              <a href="#" class="button button-cards">
+                <span class="visually-hidden">Показать карточки</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none">
+                  <path fill="#000"
+                    d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
+                </svg>
+              </a>
+            </li>
+            <li class="card-type-item">
+              <a class="button button-card" href="#">
+                <span class="visually-hidden">Показать карточку</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none">
+                  <path fill="#000" d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
+                </svg>
+              </a>
+            </li>
+            <li class="card-type-item">
+              <a class="button button-light" href="#">
+                <span class="visually-hidden">Показать список</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none">
+                  <path fill="#000"
+                    d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
+                </svg>
+              </a>
+            </li>
+          </ul>
           <ul class="product-list">
             <li class="product-card-item">
               <article class="product-card">
@@ -251,7 +259,7 @@
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
             <button class="button newsletter-button" type="submit">
-              <span class="butto-submit">Подписаться</span>
+              <span class="name-button-submit">Подписаться</span>
             </button>
           </form>
         </section>
