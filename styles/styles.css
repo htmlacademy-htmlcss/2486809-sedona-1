@@ -293,7 +293,7 @@ body {
   color: #ffffff;
   text-decoration: none;
   border-radius: 4px;
-  padding: 12px 50px;
+  padding: 12px 24px;
   width: 376px;
   height: 52px;
   background-color: #756157;
@@ -316,6 +316,7 @@ body {
   line-height: 1.2;
   text-transform: uppercase;
   color: #ffffff;
+  margin-top: 0;
   margin-bottom: 20px;
 }
 
@@ -324,28 +325,40 @@ body {
   font-size: 22px;
   line-height: 1.18;
   color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 54px;
 }
 
-.newsletter-button {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.18;
-  text-transform: uppercase;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 0 4px 4px 0;
-  padding: 8px 50px;
-  width: 232px;
-  height: 52px;
-  background-color: #82b3d3;
+.newsletter-form {
+  width: 684px;
+  margin: 0 auto;
 }
 
 .field {
+  display: block;
   border-radius: 4px 0 0 4px;
   padding: 12px 20px;
-  width: 452px;
   height: 52px;
+  width: 452px;
 }
+
+.newsletter-button {
+  display: block;
+  height: 52px;
+  width: 232px;
+  background-color: #82b3d3;
+
+}
+
+.name-button-submit {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
 
 
 
