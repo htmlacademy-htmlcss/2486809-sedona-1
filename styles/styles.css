@@ -101,7 +101,6 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
-  text-align: center;
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
@@ -144,8 +143,14 @@ body {
   background-repeat: no-repeat;
   background-position: center bottom, center;
   min-height: 485px;
-  padding: 51px;
+  padding-top: 51px;
+  padding-bottom: 82px;
   color: #000000;
+}
+
+.welcome-logo {
+  display: block;
+  margin: auto;
 }
 
 /* Преимущества заголовок (Седона не большой городок)*/
@@ -208,17 +213,18 @@ body {
   display: block;
 }
 
-.advantages-item-extended {
-  background-color: #82b3d3;
-  color: #ffffff;
-}
 
-.advantages-item:nth-child(2n) {
-  background-color: rgba(131, 179, 211, 0.12);
+.advantages-item {
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-item:not(.advantages-item-extended):nth-child(2n) {
-  background-color: rgba(131, 179, 211, 0.2);
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-extended {
+  background-color: #82b3d3;
+  color: #ffffff;
 }
 
 
@@ -233,8 +239,12 @@ body {
 
 /*Описание карточек преимущества*/
 
-.advantages-item-extended .advantages-desc {
+.advantages-item-extended {
   color: #f2f2f2;
+}
+
+.advantages-item:not(.advantages-item-extended) .advantages-title {
+  color: #000000;
 }
 
 /* Второй вариант
@@ -282,12 +292,12 @@ body {
 }
 
 /* Блок: еда, сувениры, жилье */
-.desc-housing-item:nth-child(1n) {
-  background-color: rgba(131, 179, 211, 0.12);
+.desc-housing-item:nth-child(2n) {
+  background-color: #ffffff;
 }
 
-.desc-housing-item:nth-child(2) {
-  background-color: rgba(131, 179, 211, 0.2);
+.desc-housing-item {
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 /* Заголовок: еда, сувениры, жилье*/
