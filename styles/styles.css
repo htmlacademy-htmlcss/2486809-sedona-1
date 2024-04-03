@@ -21,20 +21,31 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
+  height: 100%;
+  width: 100%;
   font-size: 18px;
   line-height: 1.18;
   background-color: #f2f2f2;
   color: #333333;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   width: 1200px;
   margin: 0 auto;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  min-height: 100%;
 }
+
+
 
 .visually-hidden {
   position: absolute;
@@ -70,6 +81,22 @@ body {
 }
 
 /*Навигация хедер*/
+
+.navigation {
+  display: flex;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  max-width: 452px;
+}
+
+.navigation-user {
+  max-width: 300px;
+  margin-left: auto;
+}
+
+
 .navigation-link {
   font-weight: 700;
   font-size: 20px;
@@ -81,8 +108,9 @@ body {
   text-transform: capitalize;
 }
 
+
 .button-want {
-  display: block;
+  display: flex;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.18;
@@ -98,6 +126,11 @@ body {
 }
 
 /*Блок Hero*/
+
+.hero-container {
+  flex-grow: 1;
+}
+
 .hero-index {
   text-align: center;
   background-color: #ffffff;
@@ -122,6 +155,7 @@ body {
   padding-bottom: 69px;
 }
 
+
 .section-title-advantages {
   font-weight: 700;
   font-size: 30px;
@@ -141,12 +175,31 @@ body {
   margin: 0
 }
 
+/*Блок преимуществ*/
+
 .advantages-list {
-  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
   margin: 0;
 }
 
-/*Блок преимуществ*/
+.advantages-item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 385px;
+}
+
+
+.advantages-item-extended {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+}
+
+
 .advantages-title {
   margin: 0;
 }
