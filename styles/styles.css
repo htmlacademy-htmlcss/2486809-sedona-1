@@ -72,18 +72,22 @@ body {
 .card-type,
 .pagination {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 /*Хедер*/
-.page-header {
+.header {
   background-color: #ffffff;
   color: #000000;
+  display: flex;
 }
 
 /*Навигация хедер*/
 
 .navigation {
   display: flex;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -91,6 +95,12 @@ body {
   max-width: 452px;
 }
 
+.navigation-item {
+  display: flex;
+
+}
+
+/* сердечко лупа */
 .navigation-user {
   max-width: 300px;
   margin-left: auto;
@@ -184,7 +194,6 @@ body {
 
 .advantages-list {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
@@ -192,21 +201,23 @@ body {
 
 .advantages-item {
   display: flex;
-  flex-wrap: wrap;
   width: 400px;
-  height: 385px;
+  min-height: 385px;
+  background-color: rgba(131, 179, 211, 0.2);
+  text-align: center;
 }
 
 
 .advantages-item-extended {
   display: flex;
-  flex-wrap: wrap;
-  width: 800px;
+  background-color: #82b3d3;
+  color: #ffffff;
+  width: 400px;
+  min-height: 385px;
 }
 
-
-.advantages-title {
-  margin: 0;
+.advantages-item:not(.advantages-item-extended):nth-child(2n) {
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-image {
@@ -214,18 +225,6 @@ body {
 }
 
 
-.advantages-item {
-  background-color: rgba(131, 179, 211, 0.2);
-}
-
-.advantages-item:not(.advantages-item-extended):nth-child(2n) {
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-.advantages-item-extended {
-  background-color: #82b3d3;
-  color: #ffffff;
-}
 
 
 /*Заголовок карточек преимущества*/
@@ -234,7 +233,11 @@ body {
   font-size: 24px;
   line-height: 1.17;
   text-transform: uppercase;
-  ;
+  margin: 0;
+}
+
+.advantages-desc {
+  margin: 0;
 }
 
 /*Описание карточек преимущества*/
@@ -247,21 +250,6 @@ body {
   color: #000000;
 }
 
-/* Второй вариант
-.advantages-desc .advantages-desc:not(:first-child) .advantages-desc:not(:last-child) {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.17;
-  color: #333333;
-} */
-
-/*Третий вариант
-.advantages-desc :not(.advantages-item-extended) {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.17;
-  color: #333333;
-} */
 
 
 .wrap-desc-housing {
