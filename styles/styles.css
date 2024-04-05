@@ -200,16 +200,13 @@ body {
 }
 
 .advantages-item {
-  display: flex;
   width: 400px;
   min-height: 385px;
   background-color: rgba(131, 179, 211, 0.2);
-  text-align: center;
 }
 
 
 .advantages-item-extended {
-  display: flex;
   background-color: #82b3d3;
   color: #ffffff;
   width: 400px;
@@ -233,7 +230,9 @@ body {
   font-size: 24px;
   line-height: 1.17;
   text-transform: uppercase;
+  padding-top: 120px;
   margin: 0;
+  margin-bottom: 62px;
 }
 
 .advantages-desc {
@@ -274,18 +273,22 @@ body {
   margin: 0;
 }
 
+
+/* Блок: еда, сувениры, жилье */
 .desc-housing-list {
   padding-left: 0;
   margin-bottom: 0;
-}
-
-/* Блок: еда, сувениры, жилье */
-.desc-housing-item:nth-child(2n) {
-  background-color: #ffffff;
+  display: flex;
 }
 
 .desc-housing-item {
+  width: 400px;
+  min-height: 385px;
   background-color: rgba(131, 179, 211, 0.12);
+}
+
+.desc-housing-item:nth-child(2n) {
+  background-color: #ffffff;
 }
 
 /* Заголовок: еда, сувениры, жилье*/
@@ -295,6 +298,9 @@ body {
   line-height: 1.17;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  padding-top: 183px;
+  margin-bottom: 30px;
 }
 
 /* Описание: еда, сувениры, жилье*/
@@ -303,6 +309,7 @@ body {
   font-size: 18px;
   line-height: 1.17;
   color: #333333;
+  margin: 0;
 }
 
 
@@ -368,6 +375,7 @@ body {
 }
 
 .newsletter-form {
+  display: flex;
   width: 684px;
   margin: 0 auto;
 }
@@ -404,6 +412,29 @@ body {
   color: #ffffff;
 }
 
+/* footer */
+
+.page-footer {
+  min-height: 120px;
+}
+
+.wrap-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.footer-list {
+  display: flex;
+  align-content: center;
+}
+
+.footer-social-item {
+  align-content: center;
+}
+
 .footer-contacts-address-phone {
   font-weight: 400;
   font-size: 40px;
@@ -419,6 +450,8 @@ body {
 
 .hero-inner {
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
 }
 
 .wrap-filter {
@@ -485,12 +518,25 @@ body {
   background-color: transparent;
 }
 
+
+.wrap-hotels-found {
+  display: flex;
+  width: 1060px;
+  min-height: 49px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+
+
 .number-pages {
   font-weight: 700;
   font-size: 30px;
   line-height: 1.2;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
 }
 
 .select-control {
@@ -543,11 +589,41 @@ body {
   margin-right: 5px;
 }
 
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1060px;
+  min-height: 896px;
+  margin: 0 auto;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  min-height: 438px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+/* .wrap-product-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 20px 20px;
+} */
+
+/* .product-card {
+  margin-right: 20px;
+  margin-bottom: ;
+} */
+
 .product-card-button {
   border-radius: 4px;
-  padding: 8px 50px;
+  padding-top: 8px;
   width: 140px;
-  height: 36px;
+  min-height: 36px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
@@ -575,6 +651,7 @@ body {
 }
 
 .pagination {
+  display: flex;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.8;
