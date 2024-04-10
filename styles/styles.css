@@ -259,6 +259,7 @@ body {
 }
 
 .advantages-desc {
+  text-align: center;
   margin: 0;
 }
 
@@ -308,6 +309,7 @@ body {
   width: 400px;
   min-height: 385px;
   background-color: rgba(131, 179, 211, 0.12);
+  padding: 183px 85px 70px;
 }
 
 .desc-housing-item:nth-child(2n) {
@@ -322,7 +324,6 @@ body {
   text-transform: uppercase;
   color: #000000;
   margin: 0;
-  padding-top: 183px;
   margin-bottom: 30px;
 }
 
