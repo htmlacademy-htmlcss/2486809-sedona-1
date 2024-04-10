@@ -43,6 +43,7 @@ body {
   margin: 0 auto;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   min-height: 100%;
+  background-color: #ffffff;
 }
 
 
@@ -357,7 +358,7 @@ body {
   margin: auto;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.18;
+  line-height: 1.8;
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
