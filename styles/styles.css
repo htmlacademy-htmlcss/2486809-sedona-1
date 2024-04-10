@@ -221,12 +221,16 @@ body {
 
 .advantages-item {
   display: flex;
+  align-items: center;
   min-height: 385px;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-item-wrap {
+  display: flex;
+  flex-direction: column;
   width: 400px;
+  padding: 70px 85px;
 }
 
 .advantages-item-extended {
@@ -252,9 +256,6 @@ body {
   font-size: 24px;
   line-height: 1.17;
   text-transform: uppercase;
-  padding-top: 120px;
-  margin: 0;
-  margin-bottom: 62px;
 }
 
 .advantages-desc {
