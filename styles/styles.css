@@ -659,36 +659,41 @@ body {
 
 .pagination {
   display: flex;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.8;
-  text-transform: uppercase;
-  text-align: center;
-
+  gap: 8px;
 }
 
-.pagination-item:first-child {
-  background-color: #f2f2f2;
-  border-radius: 4px;
-  width: 60px;
-  height: 60px;
-  color: #000000;
-}
-
-.pagination-item:not(:nth-child(5)):not(:nth-child(1)) {
+.pagination-link {
+  display: block;
+  padding: 12px;
   background-color: #82b3d3;
   color: #ffffff;
   border-radius: 4px;
   width: 60px;
   height: 60px;
   text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.pagination-item:nth-child(5) {
+
+.pagination-current {
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
+
+.pagination-separator {
+  display: block;
+  text-align: center;
+  padding-top: 17px;
   background-color: #ffffff;
   border-radius: 4px;
   width: 60px;
   height: 60px;
+
 }
 
 
