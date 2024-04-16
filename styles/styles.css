@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "PT Sans"
-    font-style: normal;
+  font-family: "PT Sans";
+  font-style: normal;
   font-weight: 400;
   src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
@@ -8,8 +8,8 @@
 
 
 @font-face {
-  font-family: "PT Sans"
-    font-style: normal;
+  font-family: "PT Sans";
+  font-style: normal;
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
@@ -84,6 +84,8 @@ body {
   display: flex;
   z-index: 2;
   gap: 30px;
+  width: 1060px;
+  margin: 0 auto;
 }
 
 .sedona-logo-header {
@@ -99,9 +101,10 @@ body {
 
 .navigation {
   display: flex;
-  width: 1200px;
+  width: 1060px;
   margin: 0 auto;
   gap: 20px;
+  flex-grow: 1;
 }
 
 .navigation-list {
@@ -187,8 +190,11 @@ body {
 /* Преимущества заголовок (Седона не большой городок)*/
 
 .wrap-desc-advantages {
+  max-width: 660px;
   padding-top: 69px;
   padding-bottom: 69px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -220,6 +226,15 @@ body {
   margin: 0;
 }
 
+.advantages-item-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  padding: 70px 85px;
+  height: 100%;
+}
+
 .advantages-item {
   display: flex;
   align-items: center;
@@ -227,12 +242,7 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-item-wrap {
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  padding: 70px 85px;
-}
+
 
 .advantages-item-extended {
   background-color: #82b3d3;
@@ -277,6 +287,9 @@ body {
 
 
 .wrap-desc-housing {
+  max-width: 510px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 64px;
   padding-bottom: 64px;
 }
@@ -337,18 +350,27 @@ body {
   margin: 0;
 }
 
-
+/* Блок заинтересовались  */
 .hotel-offer {
   padding-top: 96px;
   padding-bottom: 96px;
 }
 
 .section-title-hotel {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+
+  text-transform: uppercase;
+  color: #000000;
   margin-top: 0;
   margin-bottom: 20px;
 }
 
 .section-subtitle-hotel {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.18;
   margin-top: 0;
   margin-bottom: 54px;
 }
@@ -363,12 +385,12 @@ body {
   color: #ffffff;
   text-decoration: none;
   border-radius: 4px;
-  padding: 12px 24px;
+  padding: 8px 50px;
   width: 376px;
-  height: 52px;
   background-color: #756157;
 }
 
+/* Блок подпишитесь на рассылку */
 .newsletter-index {
   background-color: #483a33;
   background-image: url("../images/Subscribe-mountain.jpg");
@@ -593,9 +615,6 @@ body {
   padding-top: 10px;
 }
 
-/* .card-type-item {
-  display: inline;
-} */
 
 
 .button-card {
