@@ -657,14 +657,36 @@ body {
   border: 1px solid #e6e6e6;
   border-radius: 4px;
   padding: 19px;
-
 }
 
+.product-card-link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  color: #000;
+  text-decoration: none;
+}
+
+.product-card-type-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-card-button-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.star-content-wrap {
+  display: flex;
+  justify-content: space-between;
+}
 
 .product-card-button {
+  display: block;
   border-radius: 4px;
   padding: 8px 20px;
-  width: 140px;
+  width: calc(50% - 10px);
   min-height: 36px;
   font-weight: 700;
   font-size: 16px;
@@ -689,12 +711,9 @@ body {
   color: #ffffff;
 }
 
-.product-card-link {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.16;
-  color: #000;
-  text-decoration: none;
+.hotel_star {
+  display: flex;
+  align-items: flex-start;
 }
 
 /* ----------------------------------------- */
