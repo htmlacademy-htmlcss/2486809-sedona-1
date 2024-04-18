@@ -675,6 +675,7 @@ body {
 .product-card-button-wrap {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 16px;
 }
 
 .star-content-wrap {
@@ -711,10 +712,22 @@ body {
   color: #ffffff;
 }
 
-.hotel_star {
-  display: flex;
-  align-items: flex-start;
+.rating-desc {
+  display: block;
+  border-radius: 4px;
+  min-width: 140px;
+  height: 37px;
+  margin: 0;
+  padding: 9px 23px;
+  background: #f2f2f2;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  text-align: center;
+  color: #333333;
 }
+
 
 /* ----------------------------------------- */
 
