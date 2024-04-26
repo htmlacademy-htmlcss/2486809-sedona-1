@@ -459,48 +459,6 @@ body {
   color: #ffffff;
 }
 
-/* footer */
-
-.page-footer {
-  min-height: 120px;
-}
-
-.wrap-footer {
-  display: flex;
-  justify-content: space-between;
-  width: 1060px;
-  margin: 0 auto;
-  padding-top: 40px;
-}
-
-.footer-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-}
-
-.footer-social-item {
-  align-content: center;
-}
-
-.footer-social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 47px;
-  height: 40px;
-}
-
-.footer-contacts-address-phone {
-  font-weight: 400;
-  font-size: 40px;
-  font-style: normal;
-  text-decoration: none;
-  line-height: 1;
-  text-transform: uppercase;
-  text-align: center;
-  color: #000000;
-}
 
 /* Страница каталог*/
 
@@ -642,8 +600,8 @@ body {
 /* Карточки гостиниц */
 
 .product-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
   width: 1060px;
   min-height: 896px;
   margin: 0 auto;
@@ -652,11 +610,14 @@ body {
 }
 
 .product-card {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  gap: 16px 20px;
   width: 340px;
   height: 100%;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
-  padding: 19px;
+  padding: 20px;
 }
 
 .product-card-link {
@@ -665,26 +626,30 @@ body {
   line-height: 1.16;
   color: #000;
   text-decoration: none;
+  grid-column: 1 / -1;
 }
 
-.product-card-type-wrap {
-  display: flex;
-  justify-content: space-between;
-}
-
-.product-card-button-wrap {
-  display: flex;
-  justify-content: space-between;
+.product-card-image {
+  object-fit: cover;
   margin-bottom: 16px;
 }
 
-.star-content-wrap {
-  display: flex;
-  justify-content: space-between;
+.product-card-title {
+  margin: 0;
+}
+
+.product-card-type {
+  margin: 0;
+}
+
+.product-card-price {
+  text-align: end;
+  margin: 0;
 }
 
 .product-card-button {
   display: block;
+  min-width: 140px;
   border-radius: 4px;
   padding: 8px 20px;
   width: calc(50% - 10px);
@@ -718,7 +683,7 @@ body {
   min-width: 140px;
   height: 37px;
   margin: 0;
-  padding: 9px 23px;
+  padding: 9px 15px;
   background: #f2f2f2;
   font-weight: 400;
   font-size: 16px;
@@ -837,4 +802,48 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
+}
+
+/* footer */
+
+.page-footer {
+  min-height: 120px;
+}
+
+.wrap-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.footer-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  max-width: 300px;
+}
+
+.footer-social-item {
+  align-content: center;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47px;
+  height: 40px;
+}
+
+.footer-contacts-address-phone {
+  font-weight: 400;
+  font-size: 40px;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
 }
