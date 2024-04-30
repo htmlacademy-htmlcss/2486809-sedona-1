@@ -220,31 +220,37 @@ body {
 /*Блок преимуществ*/
 
 .advantages-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* flex-wrap: wrap; */
   padding: 0;
   margin: 0;
 }
 
+
+.advantages-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* display: flex;
+  align-items: center; */
+  min-height: 385px;
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
 .advantages-item-wrap {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
   width: 400px;
   padding: 70px 85px;
   height: 100%;
 }
 
-.advantages-item {
-  display: flex;
-  align-items: center;
-  min-height: 385px;
-  background-color: rgba(131, 179, 211, 0.2);
-}
-
-
-
 .advantages-item-extended {
+  grid-column: 1 / -1;
   background-color: #82b3d3;
   color: #ffffff;
 }
@@ -267,6 +273,7 @@ body {
   font-size: 24px;
   line-height: 1.17;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .advantages-desc {
@@ -314,9 +321,11 @@ body {
 
 /* Блок: еда, сувениры, жилье */
 .desc-housing-list {
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   padding-left: 0;
   margin-bottom: 0;
-  display: flex;
 }
 
 .desc-housing-item {
@@ -601,7 +610,7 @@ body {
 
 .product-list {
   display: grid;
-  grid-template-columns: repeat(3, 340px);
+  grid-template-columns: repeat(3, 1fr);
   width: 1060px;
   min-height: 896px;
   margin: 0 auto;
@@ -611,7 +620,8 @@ body {
 
 .product-card {
   display: grid;
-  grid-template-columns: repeat(2, 140px);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
   gap: 16px 20px;
   width: 340px;
   height: 100%;
@@ -630,6 +640,7 @@ body {
 }
 
 .product-card-image {
+  display: block;
   object-fit: cover;
   margin-bottom: 16px;
 }
