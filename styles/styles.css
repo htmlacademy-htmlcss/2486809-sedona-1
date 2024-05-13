@@ -921,7 +921,7 @@ body {
 
 
 .hotel_star {
-  width: 96px;
+  width: 90px;
   height: 37px;
   background-image: url(../images/star.svg);
   background-repeat: space;
@@ -930,7 +930,7 @@ body {
 }
 
 .hotel-star-4 {
-  width: 90px;
+  width: 88px;
   height: 18px;
 }
 
@@ -950,9 +950,22 @@ body {
 
 /* Пагинация */
 
+.pagination::before {
+  position: absolute;
+  content: "";
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1060px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid #e6e6e6;
+}
+
+
 .pagination {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
   width: 1060px;
   margin: 0 auto;
   gap: 8px;
