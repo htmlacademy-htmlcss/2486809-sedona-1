@@ -611,24 +611,153 @@ body {
   color: #ffffff;
   background-size: cover;
   margin-bottom: 50px;
+  padding: 35px 70px 70px;
 }
 
-/* .button-want-catalog {
-  display: block;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.18;
-  text-transform: uppercase;
-  text-align: center;
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
   color: #ffffff;
-  text-decoration: none;
+  list-style-type: none;
+}
+
+
+
+.breadcrumbs-item {
+  display: flex;
+  position: relative;
+  margin-right: 28px;
+  align-items: center;
+}
+
+.breadcrumbs-item::after {
+  content: " ";
+  position: absolute;
+  display: flex;
+  background-image: url(../images/breadcrumbs.svg);
+  background-repeat: no-repeat;
+  left: 23px;
+  background-position: center;
+  height: 13px;
+  width: 8px;
+}
+
+.breadcrumbs-item:last-child::after {
+  content: none;
+}
+
+.catalog-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+}
+
+
+.catalog-filter-group {
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 150px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
+.catalog-filter-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 0;
+  margin-bottom: 32px
+}
+
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+
+.control {
+  display: flex;
+  gap: 16px;
+  line-height: 23px;
+  cursor: pointer;
+}
+
+.control:hover {
+  opacity: .6;
+}
+
+
+.control:active {
+  opacity: .3;
+}
+
+.mark {
+  display: flex;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  background-color: #fff;
+}
+
+.checkbox-tick {
   border-radius: 4px;
-  padding: 8px 16px;
-  width: 160px;
-  height: 36px;
-  background-color: #756157;
-  margin: 14px 0;
-} */
+}
+
+
+.control-input:checked+.checkbox-tick {
+  background-image: url("../images/catalog/checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.radio-button {
+  border-radius: 50%;
+}
+
+.radio-button::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: transparent;
+  width: 10px;
+  height: 10px;
+}
+
+input[type="radio"]:checked+.radio-button::before {
+  background-color: #3f5e72;
+}
+
+.price-group {
+  flex-basis: 288px;
+  margin-left: auto;
+}
+
+.range {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 44px;
+}
+
+
+
+.range-from-field span {
+  text-align: right;
+  color: #000;
+  opacity: 0.3;
+}
+
+
+
 
 .inner-header-title {
   font-weight: 700;
