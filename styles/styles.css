@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: > 2% and last 1 version
+*/
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -53,6 +60,7 @@ body {
   border: 0;
   padding: 0;
   white-space: nowrap;
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -1021,6 +1029,7 @@ input[type="radio"]:checked+.radio-button::before {
   font-size: 18px;
   line-height: 1.7;
   color: #333333;
+  -webkit-appearance: none;
   appearance: none;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
@@ -1497,6 +1506,7 @@ a[href^="tel:"]:active {
 }
 
 /* modal-container */
+/* что бы открыть окно нужно убрать  у .modal-container-close  display:none */
 .modal-container {
   position: fixed;
   top: 0;
@@ -1653,7 +1663,6 @@ a[href^="tel:"]:active {
 
 .modal-field-group-data-arrival .input-date,
 .modal-field-group-data-depart .input-date {
-  /* width: 100%; */
   background-image: url("../images/modal/date.svg");
   background-repeat: no-repeat;
   background-position: center right 22px;
@@ -1797,7 +1806,7 @@ a[href^="tel:"]:active {
   left: 0;
   width: 256px;
   min-height: 143px;
-  padding: 15px 18px 18px 22px;
+  padding: 20px 18px 18px 22px;
   font-size: 16px;
   line-height: 1.25;
   border-radius: 10px;
